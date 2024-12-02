@@ -1,4 +1,3 @@
-// pages/index.js
 import { getPostData } from '../utility/GetPostData';
 
 export default function Home({ postData }) {
@@ -15,7 +14,7 @@ export async function getStaticProps() {
     const postData = getPostData();
     return {
         props: {
-            postData
-        }
+            postData,
+        },
     };
 }
